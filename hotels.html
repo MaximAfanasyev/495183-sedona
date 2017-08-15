@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="site-navigation">
+            <a class="main-header" href="index.html">
+                <img src="img/index-logo.svg" width="100" height="100" alt="Логотип «Седона»">
+            </a>
+            <ul class="site-navigation">
+                <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
+                <li><a href="media.html">ФОТО И ВИДЕО</a></li>
+                <li><a href="map.html">КАРТА ШТАТА</a></li>
+                <li><a href="hostels.html">ГОСТИНИЦЫ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="visually-hidden">Выбор</h1>
+        <section class="selection-list">
+            <h3>Инфраструктура:</h3>
+            <ul class="selestion-item">
+                <li>Бассейн</li>
+                <li>Парковка</li>
+                <li>Wi-fi</li>
+            </ul>
+            <h3>Тип жилья:</h3>
+            <li>Гостиница</li>
+            <li>Мотель</li>
+            <li>Апартаменты</li>
+            <h3>Стоимость в сутки (Р):</h3>
+            От О<input type="range" min="0" max="3500" step="100">До 3000
+        </section>
+        <section class="sorting">
+            <h2>Найдено: 3</h2>
+            <ul class="sorting-list">
+                <li>По цене</li>
+                <li>По типу</li>
+                <li>По рейтингу</li>
+            </ul>
+        </section>
+        <section class="hotels-list">
+            <p class="hotels-item">
+                <img src="img/amararesort.jpg" width="" height="">
+                Amara resort & Spa<br>
+                Гостиница от 4000Р.
+                Рейтинг: 8,5
+                <input type="button" value="Подробнее">
+                <input type="button" value="Забронировать">
+            </p>
+            <p class="hotels-item">
+                <img src="img/desertquail.jpg" width="" height="">
+                Desert quail inn<br>
+                Мотель от 3000Р.
+                Рейтинг: 8,9
+                <input type="button" value="Подробнее">
+                <input type="button" value="Забронировать">
+            </p>
+            <p class="hotels-item">
+                <img src="img/villasatpoco.jpg" width="" height="">
+                Villas at poco diablo<br>
+                Аппартаменты от 2000Р.
+                Рейтинг: 9,2
+                <input type="button" value="Подробнее">
+                <input type="button" value="Забронировать">
+            </p>
+        </section>
+    </main>
+    <div class="footer-social">
+        <b><a href="instagramm.com">#VISITSEDONA</a></b>
+        <ul>
+            <li><a class="social-button" href="">TWITTER</a></li>
+            <li><a class="social-button" href="">FACEBOOK</a></li>
+            <li><a class="social-button" href="">YOTUBE</a></li>
+        </ul>
+    </div>
+    <p class="footer-copyright">
+        <b>WEBSITE BY</b>
+        <a class="button" href="https://html.academy.ru">HTML ACADEMY</a>
+        <img src="img/index-logo.svg" width="200" height="70" alt="Логотип HTML ACADEMY">
+    </p>
+</body>
+
+</html>
