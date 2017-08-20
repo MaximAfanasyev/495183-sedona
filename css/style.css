@@ -1,0 +1,114 @@
+body {
+    background-color: gray;
+    /*цвет для того чтобы видеть надписи*/
+}
+
+.topic {
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 85px;
+    line-height: 8, 5px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.caption-title-main {
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.caption-item-main,
+.caption-title {
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: regular;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.caption-title-blue {
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: regular;
+    font-size: 14px;
+    line-height: 26px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.description-blue {
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: regular;
+    font-size: 14px;
+    line-height: 26px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.description,
+.number,
+.feedback-item-rubric {
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: regular;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.feedback-item {
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 8, 5px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.feedback-item-brown {
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.visual-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+.container-topic-list {
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.container-topic-item {
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: regular;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.found {
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+    text-transform: uppercase;
+}
