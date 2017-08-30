@@ -1,84 +1,21 @@
-body {
-    background-color: gray;
-    /*цвет для того чтобы видеть надписи*/
+@font-face {
+    font-family: 'PT Sans';
+    src: url('font/ptsans.woff2') format('woff2'), src: local('PT Sans'), local('PTSans-Regular'), url('font/ptsans.eot?#iefix') format('embedded-opentype'), url('font/ptsans.woff2') format('woff2');
 }
 
-.topic {
-    font-family: "PT Sans Narrow", "Arial", sans-serif;
-    font-weight: bold;
-    font-size: 85px;
-    line-height: 8, 5px;
-    color: #000000;
-    text-transform: uppercase;
-}
-
-.caption-title-main {
-    font-family: "PT Sans Narrow", "Arial", sans-serif;
-    font-weight: bold;
-    font-size: 21px;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14;
     line-height: 26px;
-    color: #000000;
-    text-transform: uppercase;
-}
-
-.caption-item-main,
-.caption-title {
-    font-family: "PT Sans Narrow", "Arial", sans-serif;
-    font-weight: regular;
-    font-size: 14px;
-    line-height: 26px;
+    font-weight: 700;
     color: #333333;
     text-transform: uppercase;
 }
 
-.caption-title-blue {
-    font-family: "PT Sans Narrow", "Arial", sans-serif;
-    font-weight: regular;
-    font-size: 14px;
-    line-height: 26px;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-.description-blue {
-    font-family: "PT Sans Narrow", "Arial", sans-serif;
-    font-weight: regular;
-    font-size: 14px;
-    line-height: 26px;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-.description,
-.number,
-.feedback-item-rubric {
-    font-family: "PT Sans Narrow", "Arial", sans-serif;
-    font-weight: regular;
-    font-size: 14px;
-    line-height: 26px;
-    color: #000000;
-    text-transform: uppercase;
-}
-
-.feedback-item {
-    font-family: "PT Sans Narrow", "Arial", sans-serif;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 8, 5px;
-    color: #000000;
-    text-transform: uppercase;
-}
-
-.feedback-item-brown {
-    font-family: "PT Sans Narrow", "Arial", sans-serif;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 26px;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-.visual-hidden {
+.visually-hidden {
     position: absolute;
     overflow: hidden;
     clip: rect(0 0 0 0);
@@ -88,27 +25,259 @@ body {
     padding: 0;
     border: 0;
 }
-.container-topic-list {
-    font-family: "PT Sans Narrow", "Arial", sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
-    color: #ffffff;
-    text-transform: uppercase;
+
+a {
+    text-decoration: none;
 }
-.container-topic-item {
-    font-family: "PT Sans Narrow", "Arial", sans-serif;
-    font-weight: regular;
+
+.main-header {
     font-size: 14px;
-    line-height: 21px;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-.found {
-    font-family: "PT Sans Narrow", "Arial", sans-serif;
-    font-weight: bold;
-    font-size: 21px;
     line-height: 26px;
     color: #000000;
+    text-align: center;
+}
+
+.site-navigation,
+.needs-item,
+.adventure-item,
+.adventure-item-blue,
+.social,
+.inner-page .sorting-list,
+.inner-page .hostel-rating {
+    list-style: none;
+}
+
+.site-navigation a,
+.footer-social a {
+    text-align: center;
+    color: #000000;
+}
+
+.site-navigation a:hover {
+    color: #81b3d2;
+}
+
+.site-navigation a:focus {
+    color: #dddddd;
+}
+
+.site-navigation a:active {
+    color: #766357;
+}
+
+.logo-sedona {
+    position: relative;
+    top: 316px;
+    left: 163px;
+}
+
+.caption {
+    text-align: center;
+}
+
+.caption-title-main,
+.inner-page .found {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.needs-item,
+.adventure-item {
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+.adventure-item-blue {
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+caption-title-blue {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.caption-title {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.feedback-item {
+    font-size: 30px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.feedback-item-rubric {
+    text-align: center;
+}
+
+.feedback-item-brown {
+    color: #ffffff;
+    background-color: #766357;
+    text-align: center;
+}
+
+.feedback-item-brown:hover {
+    color: #ffffff;
+    background-color: #604e43;
+}
+
+.feedback-item-brown:active {
+    color: #83766e;
+    background-color: #503e33;
+}
+
+.search-item {
+    text-align: center;
+}
+
+.login-link input {
+    background-color: #f2f2f2;
+}
+
+.login-link input:hover {
+    background-color: #ebebeb;
+}
+
+.login-link input:focus {
+    background-color: #ffffff;
+}
+
+.button {
+    background-color: #81b3d2;
+}
+
+.button:hover {
+    color: #f1f6f9;
+    background-color: #669ec0;
+}
+
+.button:active {
+    color: #7eadca;
+    background-color: #5496bd;
+}
+
+.social-button {
+    background-color: #81b3d2;
+}
+
+.social-button:hover {
+    background-color: #669ec0;
+}
+
+.social-button:active {
+    background-color: #5496bd;
+}
+
+.button-academy {
+    background-color: #ffffff;
+}
+
+.button-academy:hover {
+    background-color: #b6d3e5;
+}
+
+.button-academy:active {
+    background-color: #d9d8d9;
+}
+
+.inner-page .container .container-items {
+    color: #ffffff;
+    background-image: url("../img/mountain-blur.jpg");
+}
+
+.inner-page h2,
+.slider {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.inner-page .container-topic-item {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.inner-page .sorting {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.inner-page .sorting-item {
+    color: #000000;
+}
+
+.inner-page .sorting-list {
+    color: #e8e8e8;
+}
+
+.inner-page .sorting-type:hover,
+.inner-page .sorting-rating:hover {
+    color: #c9dfec;
+    border-bottom: 1px dashed #c9dfec;
+}
+
+.inner-page .sorting-price:active,
+.inner-page .sorting-rating:active,
+.inner-page .sorting-type:active {
+    color: #000000;
+    border-bottom: none;
+}
+
+.inner-page .found-price {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.inner-page .reservation {
+    font-family: "PT Sans", Arial, sans-serif;
+    background-color: #766357;
+    font-size: 14px;
+    line-height: 21px;
     text-transform: uppercase;
+    color: #ffffff;
+}
+
+.inner-page .reservation:hover {
+    background-color: #604e43;
+}
+.inner-page .reservation:active {
+    background-color: #503e33;
+    color: 
+}
+.inner-page .precisely {
+    font-family: "PT Sans", Arial, sans-serif;
+    background-color: #81b3d2;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.inner-page .precisely:hover {
+    background-color: #669ec0;
+}
+
+.inner-page .precisely:active {
+    background-color: #5496bd;
+    color: #695a51;
+}
+
+
+.inner-page .rating {
+    background-color: #f2f2f2;
+}
+
+.inner-page .found {
+    color: #000000;
+}
+
+.inner-page .found:hover {
+    color: #81b3d2;
+}
+
+.inner-page .found:active {
+    color: #c9dfec;
 }

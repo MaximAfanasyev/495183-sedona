@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="inner-page">
     <header class="main-header">
         <nav class="site-navigation">
             <ul class="site-navigation">
@@ -24,24 +24,24 @@
         </nav>
     </header>
     <main class="container">
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <form class="container-items" action="https://echo.htmlacademy.ru" method="get">
             <h2 class="container-topic-list">Инфраструктура:</h2>
-            <img src="img/mountain-blur.jpg" width=100% height=100%>
             <p class="container-topic-item"><input type="checkbox" name="pool" checked>Бассейн</p>
             <p class="container-topic-item"><input type="checkbox" name="parking">Парковка</p>
             <p class="container-topic-item"><input type="checkbox" name="wi-fi">Wi-Fi</p>
             <h2 class="container-topic-list">Тип жилья:</h2>
-            <p><input type="checkbox" name="hostels" checked>Гостиница</p>
+            <p class="container-topic-item"><input type="checkbox" name="hostels" checked>Гостиница</p>
             <p class="container-topic-item"><input type="checkbox" name="" checked>Мотель</p>
             <p class="container-topic-item"><input type="checkbox" name="" checked>Апартаменты</p>
-            <label for="value">Стоимость в сутки (Р):</label> От О<input type="range" min="0" max="3500" step="100">До 3000
+            <label for="value" class="slider">Стоимость в сутки (Р):</label> От О<input type="range" min="0" max="3500" step="100">До 3000
         </form>
         <section class="sorting">
             <h2 class="found">Найдено: 3</h2>
             <ul class="sorting-list">
-                <li>По цене</li>
-                <li>По типу</li>
-                <li>По рейтингу</li>
+                <li class="sorting-item">Сортировка:</li>
+                <li class="sorting-price">По цене</li>
+                <li class="sorting-type">По типу</li>
+                <li class="sorting-rating">По рейтингу</li>
                 <img src="img/icon-up-dir.svg">
                 <img src="img/icon-down-dir.svg">
             </ul>
@@ -53,13 +53,12 @@
                 <img src="img/hotel.jpg" width="" height="">
             </div>
             <h2 class="found">Amara resort & Spa</h2>
-            <div>
+            <div class="found-price">
                 <span>Гостиница</span>
                 <span>От 4000 Р.</span>
             </div>
-
-            <button type="submit">Подробнее</button>
-            <button type="submit">Забронировать</button>
+            <button type="submit" class="precisely">Подробнее</button>
+            <button type="submit" class="reservation">Забронировать</button>
             <ul class="hostel-rating">
                 <li><img src="img/star.svg" width="" height=""></li>
                 <li><img src="img/star.svg" width="" height=""></li>
@@ -73,31 +72,31 @@
             </div>
             <img src="img/motel.jpg">
             <h2 class="found">Desert quail inn</h2>
-            <div>
+            <div class="found-price">
                 <span>Мотель</span>
                 <span>От 3000 Р.</span>
             </div>
-            <button type="submit">Подробнее</button>
-            <button type="submit">Забронировать</button>
-            <ul>
+            <button type="submit" class="precisely">Подробнее</button>
+            <button type="submit" class="reservation">Забронировать</button>
+            <ul class="hostel-rating">
                 <li><img src="img/star.svg" width="" height=""></li>
                 <li><img src="img/star.svg" width="" height=""></li>
                 <li><img src="img/star.svg" width="" height=""></li>
-            </ul>png
+            </ul> 
             <span class="rating">Рейтинг: 8,9</span>
         </div>
         <div class=hostels>
             <div>
                 <img src="img/apartmetns.jpg" width="" height="">
             </div>
-            <h2>Villas at poco diablo</h2>
-            <div>
+            <h2 class="found">Villas at poco diablo</h2>
+            <div class="found-price">
                 <span>Апартаменты</span>
                 <span>От 2000 Р.</span>
             </div>
-            <button type="submit">Подробнее</button>
-            <button type="submit">Забронировать</button>
-            <ul>
+            <button type="submit" class="precisely">Подробнее</button>
+            <button type="submit" class="reservation">Забронировать</button>
+            <ul class="hostel-rating">
                 <li><img src="img/star.svg" width="" height=""></li>
                 <li><img src="img/star.svg" width="" height=""></li>
             </ul>
@@ -108,7 +107,7 @@
     <footer class="footer">
         <div class="footer-social">
             <b><a href="instagramm.com">#VISITSEDONA</a></b>
-            <ul>
+            <ul class="social">
                 <li>
                     <a class="social-button" href=""><img src="img/twitter.svg"></a>
                 </li>
